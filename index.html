@@ -23,18 +23,26 @@
             max-width: 900px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: baseline;
+            align-items: center;
         }
 
         .logo {
             display: block;
             margin: 0 auto;
-            width: 150px;
+            width: 100px;
             height: auto;
         }
 
         .details {
             margin-top: 20px;
             margin-bottom: 20px;
+            display: flex;
+            flex-direction: row;
+            gap: 300px;
+
         }
 
         .details div {
@@ -67,7 +75,7 @@
         .footer {
             margin-top: 20px;
             display: flex;
-            justify-content: space-between;
+            gap: 300px;
         }
 
         .footer div {
@@ -78,15 +86,24 @@
 <body>
     <div class="container">
         <!-- Logo -->
-        <img src="logo.png" alt="Logo" class="logo">
+        <img src="image.png" alt="Logo" class="logo">
+        <h3>CLASS CARD</h3>
         
         <!-- Student Details -->
         <div class="details">
-            <div><span>Student ID:</span> 2021-1234</div>
-            <div><span>Student Name:</span> John Doe</div>
-            <div><span>Course & Section:</span> BSCS-1A</div>
-            <div><span>Academic Year:</span> 2024-2025</div>
-            <div><span>Semester:</span> 1st Semester</div>
+            <div>
+                <div><span>Student ID:</span> 2021-1234</div>
+                <div><span>Student Name:</span> VERZON, EARL GIERALD B.</div>
+                <div><span>Course & Section:</span> BSCS-4A</div>
+            </div>
+            <div>
+
+                <div><span>Academic Year:</span> 2024-2025</div>
+                <div><span>Semester:</span> 1st Semester</div>
+            </div>
+           
+
+ 
         </div>
 
         <!-- Table with Subjects -->
@@ -101,39 +118,41 @@
                 </tr>
             </thead>
             <tbody>
+                <!-- Replaced subjects with the given data -->
                 <tr>
-                    <td>CS101</td>
-                    <td>Introduction to Computer Science</td>
+                    <td>CSC 1</td>
+                    <td>Introduction to Computing</td>
                     <td>3</td>
-                    <td>A</td>
+                    <td>98</td>
                     <td>Passed</td>
                 </tr>
                 <tr>
-                    <td>MATH101</td>
-                    <td>Calculus 1</td>
-                    <td>4</td>
-                    <td>B+</td>
+                    <td>PL101 </td>
+                    <td>Programming Language</td>
+                    <td>3</td>
+                    <td>96</td>
                     <td>Passed</td>
                 </tr>
                 <tr>
-                    <td>ENG101</td>
-                    <td>English Composition</td>
+                <tr>
+                    <td>IAS101</td>
+                    <td>Information Assurance and Security</td>
                     <td>3</td>
-                    <td>A</td>
+                    <td>95</td>
                     <td>Passed</td>
                 </tr>
                 <tr>
-                    <td>PHY101</td>
-                    <td>Physics 1</td>
+                    <td>NC102</td>
+                    <td>Network Communication</td>
                     <td>3</td>
-                    <td>B</td>
+                    <td>95</td>
                     <td>Passed</td>
                 </tr>
                 <tr>
-                    <td>HIST101</td>
-                    <td>World History</td>
+                    <td>THS101</td>
+                    <td>Thesis 1</td>
                     <td>3</td>
-                    <td>A-</td>
+                    <td>99</td>
                     <td>Passed</td>
                 </tr>
             </tbody>
@@ -142,7 +161,7 @@
         <!-- Footer with Total Units and Average Grade -->
         <div class="footer">
             <div>Total Units: 16</div>
-            <div>Average Grade: B+</div>
+            <div>Average Grade: 1.00</div>
         </div>
     </div>
 </body>
